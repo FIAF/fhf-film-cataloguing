@@ -1,60 +1,70 @@
 
-## FILM DOCUMENTATION WORKFLOW - FHF ARCHIVE
+## FILM DOCUMENTATION WORKFLOW
 
-The FHF film cataloguing workflow is customized, keeping with the on-practice workflow
-of documentation in the film section of the archive.
+The FHF film cataloguing workflow is customized, to complement the existing documentation that is being practiced by the conservators in the film section.
 
-- There are primarily THREE data record files in the film department.
-- All the files are either in EXCEL format or PAPER format.
+- The department maintains **three primary data record files**, all of which exist either in **Excel format** or as **paper records**.
 
 Types of Documentation
 
-1. **Acquisition Log Sheet** This is the first file in the flow of data entry and maintained in Excel. This file will have all information that can and must be recorded at the time of acquisition. Important metadata fields are in this level are mostly about the acquisition information like – acquisition source, time, date, method, place etc. and a minimum record of the technical metadata like film element, gauge, color or B&W, Number of reels and cans, and at the end the initial condition assessment of the reels. Minimum acquisition related administrative metadata is also recorded at this level.
+[1] **Acquisition Log Sheet** 
 
-2. **Film Inspection Report** This is a physical form that the film conservators prepared while working of films. This is per reel-wise report and very detailed in recording the technical metadata. This form has minimum filmographic metadata like the film title, production, processing lab, language, language, subtitle and a field for Accession No and Item No. We generate these unique numbers manually at FHF during cataloguing.
+At FHF, we maintain an **Acquisition Log** for every item that enters the collection. This is the very first file in our data entry workflow and is maintained in Excel. This log captures all the information that can and must be recorded at the time of acquisition. The primary metadata fields at this stage relate to acquisition details—including source, date, time, method, and place of acquisition. It also includes a basic technical record, such as film element type, gauge, color (or black & white), number of reels and cans, and an initial condition assessment of the reels. In addition, essential administrative metadata related to the acquisition is recorded at this level. The Administrative Department retains control over acquisition-sensitive documentation and manages related correspondence on behalf of the archive.
 
-3. **Film Archive Catalogue** FHF film cataloguing format is structured by following the rules stated by FIAF Moving Image Cataloguing Manual. It is an attempt to adapt EN16907 hierarchy in a excel format, it is still a work-in-progress, however till now at least 150 ITEMS are catalogued in this style. I am following only 2-level hierarchy model at FHF: WORK -> ITEM. Note that I use data validation lists for metadata fields with limited vocabulary like date types, sound system, color system, aspect ratio etc. to reduce error. We also have authority lists for gauge and film elements.
+[2] **Film Inspection Report** 
 
-a) Some guidelines:
-- I am keeping both WORK and ITEM as different sheets within one excel file. You can make both independent excel file.
-- I have unique identifier for each entry – WORK RECORD IDENTIFIER and ITEM RECORD IDENTIFIER. To separate each, I am using W and I as prefix for each generated ID
-- An accession number is generated at the end of each entry. This is a meaningfully coded alpha-numeric number.
-- The cataloguer strictly refer “Film Inspection Report” while cataloguing film
-- After generating the Accession Number and Item No., the same needs to be filled in the corresponding sets of “Film Inspection Report”.
-- These IDs then labeled on the can (however, we have not yet proceed with physical labeling yet)
+The second level of documentation takes place during the physical inspection of film materials by our conservators. This stage involves **a reel-wise inspection form**, completed manually by the film conservators as they work with the materials. It is highly detailed and focuses primarily on technical metadata. While the emphasis is on technical details, the form also captures basic filmographic metadata such as film title, production details, processing lab, language (credits roll), and more.
+
+Note: Both at the acquisition and inspection stages, we ensure there is photo documentation of
+the film elements, which serves as a vital visual record for reference and preservation planning.
+
+[3] **Film Archive Catalogue** 
+
+The FHF film cataloguing format is structured based on the guidelines set forth in the FIAF Moving Image Cataloguing Manual. It represents an ongoing effort to adapt the hierarchical structure of EN15907 into a practical Excel-based format. While the initial intention was to implement the full four-tier hierarchy of EN15907, I eventually streamlined it to a two-level model: WORK → ITEM. Given the nature and current size of the FHF collection, this simplified structure has proven to be comprehensible.
+
+When working within a spreadsheet environment, maintaining consistency and accuracy is critical. To support this, I use data validation lists for metadata fields that rely on a controlled vocabulary—such as date types, sound systems, color systems, aspect ratios, and others. This helps reduce entry errors and ensures uniformity across records. We maintain authority lists for film elements, gauge and condition remarks – these are modeled keeping the nature of the FHF collection in mind. 
+
+Currently, no physical labeling of film elements is in place beyond basic descriptive information. While labels do exist, the field for the formal ID is left blank at this stage. All identifiers are manually generated and recorded at the documentation level. The **FHF accession number** is an institute-defined ID number. Each film is further assigned a **Work Record Identifier** and **Item Record Identifier**, using serial-sequence numbers prefixed with **“W”** (for Work) and **“I”** (for Item) to distinguish between them.
+
+a) Some guidelines on the workflow:
+- I am currently maintaining both **WORK** and **ITEM** records as separate sheets within a single Excel file. However, these can also be exported or managed as independent Excel files if needed.
+- The cataloguer strictly refers to the **Film Inspection Report** when cataloguing at the **ITEM level**. In addition, the cataloguer consults other relevant documents, such as the **Acquisition Log**, and may also request information from the **Administrative Department** if any details are missing or unclear.
+- Unlike the ideal practice where identifiers are assigned earlier in the process, all the above-mentioned identifiers are currently generated at the **cataloguing stage**. Once the **Accession Number** and **Item Number** are generated, they must be entered into the corresponding **Film Inspection Report** forms.
 
 b) Some definitions of metadata fields –
 
 | | | |
 | --- | --- | --- | 
-| Serial No | Common serial numbering ex. 1, 2, 3,… | |
-| Work Record Identifier | Institute defined. Manually defined Alphanumeric Ex. W0059 or I-0022 | |
+| Work Record Identifier | A serial number prefixed with W to distinguish Work-level entries. |
 | Related Work | Corresponding work Id of any relation to the current work ID | Optional |
-| Collection Title | Name of the collection the Item belong to. FHF has assigned names to each collection. It is often communicate the original owner (director/cinematographer/producer) or the production house name | |
-| Collection ID | Very specific to FHF. Each collection is assigned a random number. The reason of the collection ID is to create some kind of internal authority record | Optional |
-| Title Types | Original Title, working title, acquisition title, translated title etc. | |
-| Title (WORK LEVEL) | Name of the film [Language - Year of Release] Ex. Bombay [Tamil – 1992] | |
-| Also known as | Alias Name of the film (In what language) | |
+| Collection Name and ID | Institution-defined fields that help group and track records by their provenance and ownership | Optional |
+| Title Type and Title (Work) | Includes a title type field and a free-text field for the title itself. Note: I include the language and year of release in brackets (e.g., Title (Hindi, 1972)) to aid in searchability. Country of origin is excluded, as the collection is predominantly national. | |
+| Alias or Also known as | A crucial field in the Indian context, where alternate titles are common. XXX (language) | |
 | Language type | Original, inter-titled, dialogue, spoken, sung | |
 | Date Type | Indian release date, processing date, acquisitions date etc. | |
 | Subjects | Keywords | |
-| Censorship Details | Pertaining to The Central Board of Film Certification format | Optional |
-| Filmography detail | As per the credits shown in the film |  |
-| Contains | List of ITEM(S) under the following WORK | |
-| Note | Free text field to record additional information| |
-| Cataloguer’s Note | Specific to cataloguer on the work level information | Optional |
-| Accession No | Manually generated | Optional |
-| Title (ITEM LEVEL) | Name of the film [Language -Element] | |
-| Status | Master, Viewing, Preservation, On Loan etc. | Optional |
-| Generation | Generation in the printing process of the film | |
-| Condition | FHF defined condition markers | |
+| Censorship Details | Pertaining to The Central Board of Film Certification format. Records certification or censorship status, if available | As per specs | |
+| Agents at Work level | Creative Credits: Includes a selected list of key contributors, such as: Director, Director of Photography, Music Director, Lyricist, Sound, Editing, Playback, Other roles, as applicable. Sequence: as per the credits shown in the film. | |
+| Agents at Manifestation level | This is now part of the Work, and covers entities involved in the film's production and circulation, including: Producer, Presenter, Distributor, Processing Lab, Preservation and Restoration entities  | |
+| Agents at Item level | Includes a list of agents involved in various aspects of the item's life cycle, such as: Conservator, Scanning Supervisor, Restorer, Inspection and Cleaner, Acquisition Representative, Cataloguer | |
+| Events | This field is mostly left unfilled at the Work level. At the Item level, only includes information related to the acquisition event. While ideally there should also be digitization and restoration events, however, excel does not allow linking these separate events that may take place multiple times. | |
+| Contains | Lists all Item Record Identifiers (linked by serial numbers) that are associated with the given Work. | |
+| Note & Cataloguer Note | A free-text field for additional information, comments, or observations about the item  | |
+| Title (Item) | The title is recorded with a title type and a free-text field for the title itself. I include the language and an abbreviation of the element (e.g., "16mm") in brackets to improve searchability. | |
+| Status | Master, Viewing, Preservation, On Loan etc. The status is typically marked as preservation. For De-accessioned items, the status is recorded as removed. | Optional |
+| Holding Status | This field helps track whether the film is complete. Since we don’t currently track at the manifestation level, this serves as an additional field to indicate completeness. | |
+| Holding Unit & Number of Cans | Each unit is measured in reels, and the total number of cans is recorded, along with the can size (e.g., 14 Reels > 14 (1000 ft.) cans) | |
+| Generation | Indicated as institutional—the conservators record the generation of the film print (e.g., original, first-generation, etc.). | |
+| Condition Remarks | FHF defined condition markers | |
 | Fit For | For scanning, projection etc. | Optional |
-| Part of | The WORK ID number the ITEM belongs to | |
+| Access & Condition | This field links to conservation and restoration events, though due to the flat structure of Excel, the details are kept in a simplified format. The condition is noted from the condition inspection report, and additional details about the event (e.g., who and when) are stored in a physical file folders. A related field indicates whether a condition report is available ("yes" or "no") along with the file number and location for traceability | |
+| Part of | This field links the item to its associated Work identifier | |
 
 c) Searching methodology
-At the moment, internal access is the primary function of the catalog. Internal access was considered when I developed and structured it.
 
-To conduct a basic search, follow the ITEM number and then locate the appropriate WORK identifier to extract the filmographic data; alternatively, if the user's request is for any filmographic data, we will track down the WORK identifier and compile a list of the ITEMs that fall under it. For technical metadata, we are highly dependent on ITEM levels in Excel. To trace information back from the film can, we would reply to the on-can labeling of the accession number along with ITEM No.
+Currently, the catalog is designed primarily for internal access, and this use case guided both its development and structure.
+
+To conduct a basic search: To perform a basic search, users typically begin with an ITEM number, from which they locate the corresponding WORK identifier in order to extract filmographic data. In cases where a user’s request is focused on filmographic information rather than a specific item, the process is reversed: the WORK identifier is identified first, and then a list of associated ITEMs is compiled. For any technical metadata related query, we rely heavily on the ITEM-level records in the Excel catalog.
 
 ~
 
