@@ -35,34 +35,34 @@ b) Some definitions of metadata fields –
 
 | | | |
 | --- | --- | --- | 
-| Work Record Identifier | A serial number prefixed with W to distinguish Work-level entries. |
+| Work Record Identifier | A serial number prefixed with **W** to distinguish Work-level entries. |
 | Related Work | Corresponding work Id of any relation to the current work ID | Optional |
 | Collection Name and ID | Institution-defined fields that help group and track records by their provenance and ownership | Optional |
-| Title Type and Title (Work) | Includes a title type field and a free-text field for the title itself. Note: I include the language and year of release in brackets (e.g., Title (Hindi, 1972)) to aid in searchability. Country of origin is excluded, as the collection is predominantly national. | |
+| Title Type and Title (Work) | Includes a **title type** field and a free-text field for the title itself. Note: I include the **language and year of release in brackets** (e.g., Title (Hindi, 1972)) to aid in searchability. Country of origin is excluded, as the collection is predominantly national. | |
 | Alias or Also known as | A crucial field in the Indian context, where alternate titles are common. XXX (language) | |
 | Language type | Original, inter-titled, dialogue, spoken, sung | |
 | Date Type | Indian release date, processing date, acquisitions date etc. | |
 | Subjects | Keywords | |
-| Censorship Details | Pertaining to The Central Board of Film Certification format. Records certification or censorship status, if available | As per specs | |
-| Agents at Work level | Creative Credits: Includes a selected list of key contributors, such as: Director, Director of Photography, Music Director, Lyricist, Sound, Editing, Playback, Other roles, as applicable. Sequence: as per the credits shown in the film. | |
+| Censorship Details | Pertaining to **The Central Board of Film Certification** format. Records certification or censorship status, if available | As per specs | |
+| Agents at Work level | **Creative Credits**: Includes a **selected list of key contributors**, such as: Director, Director of Photography, Music Director, Lyricist, Sound, Editing, Playback, Other roles, as applicable. Sequence: as per the credits shown in the film. | |
 | Agents at Manifestation level | This is now part of the Work, and covers entities involved in the film's production and circulation, including: Producer, Presenter, Distributor, Processing Lab, Preservation and Restoration entities  | |
-| Agents at Item level | Includes a list of agents involved in various aspects of the item's life cycle, such as: Conservator, Scanning Supervisor, Restorer, Inspection and Cleaner, Acquisition Representative, Cataloguer | |
-| Events | This field is mostly left unfilled at the Work level. At the Item level, only includes information related to the acquisition event. While ideally there should also be digitization and restoration events, however, excel does not allow linking these separate events that may take place multiple times. | |
-| Contains | Lists all Item Record Identifiers (linked by serial numbers) that are associated with the given Work. | |
+| Agents at Item level | Includes a list of **agents** involved in various aspects of the item's life cycle, such as: Conservator, Scanning Supervisor, Restorer, Inspection and Cleaner, Acquisition Representative, Cataloguer | |
+| Events | This field is mostly left unfilled at the Work level. At the Item level, only includes information related to the acquisition **event**. While ideally there should also be **digitization** and **restoration events**, however, excel does not allow linking these separate events that may take place multiple times. | |
+| Contains | Lists all **Item Record Identifiers** (linked by serial numbers) that are associated with the given Work. | |
 | Note & Cataloguer Note | A free-text field for additional information, comments, or observations about the item  | |
-| Title (Item) | The title is recorded with a title type and a free-text field for the title itself. I include the language and an abbreviation of the element (e.g., "16mm") in brackets to improve searchability. | |
-| Status | Master, Viewing, Preservation, On Loan etc. The status is typically marked as preservation. For De-accessioned items, the status is recorded as removed. | Optional |
-| Holding Status | This field helps track whether the film is complete. Since we don’t currently track at the manifestation level, this serves as an additional field to indicate completeness. | |
-| Holding Unit & Number of Cans | Each unit is measured in reels, and the total number of cans is recorded, along with the can size (e.g., 14 Reels > 14 (1000 ft.) cans) | |
-| Generation | Indicated as institutional—the conservators record the generation of the film print (e.g., original, first-generation, etc.). | |
+| Title (Item) | The title is recorded with a **title type** and a free-text field for the title itself. I include the **language** and an **abbreviation of the element** (e.g., "16mm") in brackets to improve searchability. | |
+| Status | Master, Viewing, Preservation, On Loan etc. The status is typically marked as **preservation**. For **De-accessioned** items, the status is recorded as **removed**. | Optional |
+| Holding Status | This field helps track whether the film is complete. Since we don’t currently track at the **manifestation level**, this serves as an additional field to indicate completeness. | |
+| Holding Unit & Number of Cans | Each unit is measured in **reels**, and the total number of **cans** is recorded, along with the **can size** (e.g., 14 Reels > 14 (1000 ft.) cans) | |
+| Generation | Indicated as **institutional**—the conservators record the generation of the film print (e.g., original, first-generation, etc.). | |
 | Condition Remarks | FHF defined condition markers | |
 | Fit For | For scanning, projection etc. | Optional |
-| Access & Condition | This field links to conservation and restoration events, though due to the flat structure of Excel, the details are kept in a simplified format. The condition is noted from the condition inspection report, and additional details about the event (e.g., who and when) are stored in a physical file folders. A related field indicates whether a condition report is available ("yes" or "no") along with the file number and location for traceability | |
-| Part of | This field links the item to its associated Work identifier | |
+| Access & Condition | This field links to **conservation** and **restoration events**, though due to the flat structure of Excel, the details are kept in a simplified format. The condition is noted from the **condition inspection report**, and additional details about the event (e.g., who and when) are stored in a physical file folders. A related field indicates whether a **condition report is available** ("yes" or "no") along with the file number and location for traceability | |
+| Part of | This field links the item to its **associated Work identifier** | |
 
 c) Searching methodology
 
-Currently, the catalog is designed primarily for internal access, and this use case guided both its development and structure.
+Currently, the catalog is designed primarily for **internal access**, and this use case guided both its development and structure.
 
 To conduct a basic search: To perform a basic search, users typically begin with an ITEM number, from which they locate the corresponding WORK identifier in order to extract filmographic data. In cases where a user’s request is focused on filmographic information rather than a specific item, the process is reversed: the WORK identifier is identified first, and then a list of associated ITEMs is compiled. For any technical metadata related query, we rely heavily on the ITEM-level records in the Excel catalog.
 
