@@ -44,9 +44,9 @@ b) Some definitions of metadata fields –
 | Date Type | Indian release date, processing date, acquisitions date etc. | |
 | Subjects | Keywords | |
 | Censorship Details | Pertaining to **The Central Board of Film Certification** format. Records certification or censorship status, if available | As per specs | |
-| Agents at Work level | **Creative Credits**: Includes a **selected list of key contributors**, such as: Director, Director of Photography, Music Director, Lyricist, Sound, Editing, Playback, Other roles, as applicable. Sequence: as per the credits shown in the film. | |
-| Agents at Manifestation level | This is now part of the Work, and covers entities involved in the film's production and circulation, including: Producer, Presenter, Distributor, Processing Lab, Preservation and Restoration entities  | |
-| Agents at Item level | Includes a list of **agents** involved in various aspects of the item's life cycle, such as: Conservator, Scanning Supervisor, Restorer, Inspection and Cleaner, Acquisition Representative, Cataloguer | |
+| Agents at Work level | **Creative Credits**: Includes a **selected list of key contributors**, such as: Director; Director of Photography; Music Director; Lyricist; Sound; Editing; Playback; Other roles, as applicable. Sequence: as per the credits shown in the film. | |
+| Agents at Manifestation level | This is now part of the Work, and covers entities involved in the film's production and circulation, including: Producer; Presenter; Distributor; Processing Lab; Preservation and Restoration entities  | |
+| Agents at Item level | Includes a list of **agents** involved in various aspects of the item's life cycle, such as: Conservator; Scanning Supervisor; Restorer; Inspection and Cleaner; Acquisition Representative; Cataloguer | |
 | Events | This field is mostly left unfilled at the Work level. At the Item level, only includes information related to the acquisition **event**. While ideally there should also be **digitization** and **restoration events**, however, excel does not allow linking these separate events that may take place multiple times. | |
 | Contains | Lists all **Item Record Identifiers** (linked by serial numbers) that are associated with the given Work. | |
 | Note & Cataloguer Note | A free-text field for additional information, comments, or observations about the item  | |
